@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Exo 2", sans-serif;
+  }
+  :root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #a21caf;
+  }
+  html {
+    font-size: 65%;
+    overflow-x: hidden;
+  }
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  section {
+    min-height: 100vh;
+    padding: 8rem 10% 2rem;
+  }
+  
+  /* Navbar */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 8%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  .logo{
+    color: var(--main-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    }
+    .navbar a {
+      color: var(--text-color);
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-left: 2rem;
+      transition: color 300ms ease-in-out;
+    }
+    .navbar a:hover {
+      color: var(--main-color);
+    }
+    .navbar .menu-bars {
+      display: none;
+      font-size: 2.5rem;
+      cursor: pointer;
+    }
+
+    /* Home */
+    .home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+    }
+    .home-img{
+        position: relative;
+    }
+    .home-img img{
+        width: 35vw;
+    }
+    .home-content h3{
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        }
+        .home-content h1{
+            font-size: 5rem;
+            font-weight: 700;
+            margin-bottom: 1.3rem;
+        }
+ .home-content p{
+     font-size: 1.8rem;
+     font-weight: 500;
+     margin-bottom: 2rem;
+ }
+ .social-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    font-size: 6rem;
+  }
